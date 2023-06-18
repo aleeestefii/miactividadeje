@@ -1,4 +1,7 @@
 #include "Video.h"
+#include <string>
+using std::string;
+#include <string.h>
 
 Video::Video() {
     iD = 0;
@@ -6,7 +9,7 @@ Video::Video() {
     duracion = 0;
 }
 
-Video::Video(int iD, std::string nombre, int calificacion, int duracion, std::string fechaEstreno)
+Video::Video(int iD, string nombre, int calificacion, int duracion, string fechaEstreno)
     : iD(iD), nombre(nombre), calificacion(calificacion), duracion(duracion), fechaEstreno(fechaEstreno) {}
 
 int Video::getID() const {
@@ -36,7 +39,7 @@ Video::Video() {
     duracion = 0;
 }
 
-Video::Video(int iD, std::string nombre, int calificacion, int duracion, std::string fechaEstreno)
+Video::Video(int iD, string nombre, int calificacion, int duracion, string fechaEstreno)
     : iD(iD), nombre(nombre), calificacion(calificacion), duracion(duracion), fechaEstreno(fechaEstreno) {}
 
 int Video::getID() const {

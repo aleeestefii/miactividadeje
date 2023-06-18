@@ -2,6 +2,9 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+// ES EL ARCHIVO MAIN main(), en vez de que haya un main(), esta esta clase
+#include <string.h>
+using std::string;
 
 void Streaming::exit() {
     std::cout << "Gracias" << std::endl;
@@ -9,8 +12,8 @@ void Streaming::exit() {
 }
 
 
-void Streaming::cargarDatosDesdeArchivo(const std::string& BasePelciculas.csv) {
-    std::ifstream archivo(BasePelciculas.csv);
+void Streaming::cargarDatosDesdeArchivo(const std::string& BasePelciculas) {
+    std::ifstream archivo(BasePelciculas);
     if (!archivo) {
         std::cout << "No se pudo abrir el archivo." << std::endl;
         return;
@@ -63,9 +66,10 @@ void Streaming::menu() {
                 exit();
                 break;
             default:
-                std::cout << "Opción inválida. Por favor, intente nuevamente." << std::endl;
+                std::cout << "Opción inválida. Por favor, intente otra vez." << std::endl;
                 break;
         }
     }
 }
+
 
