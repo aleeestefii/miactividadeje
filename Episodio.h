@@ -1,7 +1,7 @@
 #ifndef EPISODIO_H
 #define EPISODIO_H
 
-#include "video.h"
+#include "Video.h"
 
 class Episodio : public Video {
 private:
@@ -18,4 +18,3 @@ public:
 };
 
 #endif
-

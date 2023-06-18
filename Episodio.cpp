@@ -1,4 +1,4 @@
-#include "episodios.h"
+#include "Episodio.h"
 
 Episodio::Episodio() : temporada(0), numEpisodio(0) {}
 
@@ -16,4 +16,3 @@ void Episodio::mostrarEpisodios(std::string nombreSerie) {
 void Episodio::calificarVideo(std::string nombre, double calificacion) {
     // Implementación para calificar un video específico
 }
-

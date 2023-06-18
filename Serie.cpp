@@ -1,4 +1,4 @@
-#include "series.h"
+#include "Serie.h"
 
 Serie::Serie() {}
 

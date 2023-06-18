@@ -1,4 +1,4 @@
-#include "catalogo.h"
+#include "Catalogo.h"
 
 void Catalogo::mostrarVideosConCalificacionMayorA(double calificacion) {
     // Implementación para mostrar los videos con calificación mayor a un valor dado
@@ -19,3 +19,4 @@ void Catalogo::mostrarPeliculasConCalificacionMayorA(double calificacion) {
 void Catalogo::calificarVideo(std::string nombre, double calificacion) {
     // Implementación para calificar un video específico
 }
+

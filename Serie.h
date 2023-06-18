@@ -1,14 +1,17 @@
-#ifndef CATALOGO_H
-#define CATALOGO_H
+#ifndef SERIE_H
+#define SERIE_H
 
 #include <vector>
-#include "prueba.h"
+#include "Episodio.h"
 
-class Catalogo : public Prueba {
+class Serie : public Video {
 private:
-    std::vector<Prueba*> lista;
+    std::vector<Episodio> episodios;
 
 public:
+    Serie();
+    Serie(int iD, std::string nombre, std::string genero);
+
     void mostrarVideosConCalificacionMayorA(double calificacion);
     void mostrarVideosConGenero(std::string genero);
     void mostrarEpisodios(std::string nombreSerie);

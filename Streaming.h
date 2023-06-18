@@ -1,7 +1,8 @@
 #ifndef STREAMING_H
 #define STREAMING_H
 
-#include "catalogo.h"
+#include "Catalogo.h"
+#include <string>
 
 class Streaming : public Catalogo {
 private:
@@ -10,6 +11,9 @@ private:
 public:
     void menu();
     void exit();
+    void cargarDatosDesdeArchivo(const std::string& BasePelciculas.csv);
 };
 
 #endif
+
+
